@@ -1,0 +1,8 @@
+## Interface: 70200
+
+## Title: |cff1784d1Riphie |r|cfffb4f4fWeakAuras|r
+## Author: Riphie
+
+## Dependencies: WeakAuras
+
+core.lua
