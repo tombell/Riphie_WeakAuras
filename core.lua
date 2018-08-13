@@ -44,6 +44,12 @@ local function SkinWeakAuras(frame, ftype)
     if ftype == "icon" then
       frame.backdrop:HookScript("OnUpdate", function(self)
         self:SetAlpha(self:GetParent().icon:GetAlpha())
+
+        if frame:GetFrameLevel() - 1 >= 0 then
+          self:SetFrameLevel(frame:GetFrameLevel() - 1)
+        else
+          self:SetFrameLevel(0)
+        end
       end)
     end
   end
